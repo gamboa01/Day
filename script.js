@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const celdas = document.querySelectorAll('.celda');
     const dialogo = document.getElementById('dialogo');
     const dialogoMensaje = document.getElementById('dialogo-mensaje');
+    const dialogoExtra = document.getElementById('dialogo-extra');
 
     // Lista de mensajes para los primeros 8 cuadros
     const mensajes = [
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (contadorClicks === 9) {
                     // Muestra el mensaje especial
                     dialogoMensaje.textContent = "¿Quieres pasar conmigo el 14 de febrero amor? 😍";
+                    dialogoExtra.textContent="Aparta también mañana después de clases🤭"
                     dialogo.style.display = 'block';
                 }
             }
